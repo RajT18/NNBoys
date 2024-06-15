@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NN Ecommerce | Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Google Fonts for Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Include Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        .form-submit {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background-color: #555;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+
+        .map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+.selected-tab {
+    background-color: #f0f0f0; /* Background color when tab is selected */
+    color: #333; /* Text color when tab is selected */
+    padding: 8px 12px; /* Padding around the text */
+    border-radius: 4px; /* Rounded corners for tab */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    /* Any additional styles you want to apply */
+}
+
+.selected-tab:hover {
+    background-color: #e0e0e0; /* Background color on hover */
+    /* Any additional hover styles */
+}
+.about-us-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #0056b3;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+                <span class="ml-3 text-xl">NN BOYS</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900" href="index.html">Home</a>
+                <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+                <a class="mr-5 hover:text-gray-900" href="shoppingcart.html">Shopping cart</a>
+                <a class="mr-5 hover:text-gray-900" href="payment.html">payment</a>
+                <a class="mr-5 hover:text-gray-900" href="language.html">language</a>
+                <a class="mr-5 hover:text-gray-900" href="product.html">product</a>
+                <a class="selected-tab" href="contact.html">contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl font-bold text-gray-800 mb-6">Contact Us</h1>
+                    <p class="text-lg text-gray-700 mb-12">Get in touch with us using the information below or fill out the form.</p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 px-4 mb-8">
+                        <div class="contact-info">
+                            <h2 class="section-title mb-4">Contact Information</h2>
+                            <ul class="text-gray-800">
+                                <li class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-gray-600"></i>
+                                    </div>
+                                    <span>Aapki baaju wali gali mai</span>
+                                </li>
+                                <li class="flex items-center mb-4">
+                                    <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-gray-600"></i>
+                                    </div>
+                                    <span>halkat@bademaijaa.com</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone-alt text-gray-600"></i>
+                                    </div>
+                                    <span>+91 60606 06060</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4 mb-8">
+                        <div class="contact-form">
+                            <h2 class="section-title mb-6">Send us a message</h2>
+                            <form action="#" method="POST">
+                                <div class="mb-4">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" class="form-input">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" class="form-input">
+                                </div>
+                                <div class="mb-6">
+                                    <textarea id="message" name="message" rows="4" placeholder="Your Message" class="form-textarea"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="form-submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-16">
+            <div class="container mx-auto">
+                <h2 class="section-title text-center mb-8">Location</h2>
+                <div class="map-container mb-8">
+                    <!-- Replace with your map iframe or embed code -->
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.2956165586246!2d144.9633283153572!3d-37.81410768184953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642e3e9235e11%3A0x404c9e1ee3ac7b79!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1621424876783!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <span class="ml-3 text-xl">NN BOYS</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2020 NN BOYS
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
